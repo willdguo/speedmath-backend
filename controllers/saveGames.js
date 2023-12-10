@@ -1,7 +1,6 @@
 const savesRouter = require('express').Router()
 const jwt = require('jsonwebtoken')
 const Saves = require('../models/saves')
-const User = require('../models/user')
 
 savesRouter.get('/info', async (request, response) => {
     const saves = await Saves.find({})
